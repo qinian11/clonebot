@@ -28,3 +28,5 @@ class Config(object):
 
 def LOGGER(name: str) -> logging.Logger:
     return logging.getLogger(name)
+# 添加这一行来兼容 user.py 中的导入
+logger = LOGGER
