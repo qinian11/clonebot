@@ -1,184 +1,180 @@
 # ----------------------------------- https://github.com/m4mallu/clonebot --------------------------------------------#
 class Presets(object):
-    START_TEXT = "𝙃𝙚𝙡𝙡𝙤... {}\n𝐼 𝑐𝑎𝑛 𝑐𝑙𝑜𝑛𝑒 𝑚𝑒𝑑𝑖𝑎 𝑓𝑟𝑜𝑚 𝑎𝑛𝑦 𝑐ℎ𝑎𝑡 𝑡𝑜 𝑦𝑜𝑢𝑟 " \
-                 "𝑝𝑒𝑟𝑠𝑜𝑛𝑎𝑙 𝑐ℎ𝑎𝑡 ! 𝐶𝑙𝑖𝑐𝑘 𝑠𝑒𝑡𝑡𝑖𝑛𝑔𝑠 𝑡𝑜 𝑐𝑜𝑛𝑓𝑖𝑔𝑢𝑟𝑒 𝑚𝑒. 𝐼𝑓 𝑦𝑜𝑢 " \
-                 "𝑙𝑖𝑘𝑒 𝑚𝑒, 𝑝𝑙𝑒𝑎𝑠𝑒 𝑔𝑖𝑣𝑒 𝑎 𝑠𝑡𝑎𝑟 𝑖𝑛 𝑚𝑎 𝐺𝑖𝑡𝐻𝑢𝑏 𝑟𝑒𝑝𝑜. 𝑇ℎ𝑎𝑛𝑘𝑠 "
-    WELCOME_TEXT = "⭑⭑★✪ HELP for more info: ✪★⭑⭑"
+    START_TEXT = "你好... {}\n我可以将任何聊天中的媒体文件克隆到你的个人聊天中！" \
+                 "点击设置来配置我。如果你喜欢我，" \
+                 "请在我的 GitHub 仓库中给个星标。谢谢！"
+    WELCOME_TEXT = "⭑⭑★✪ 查看帮助获取更多信息: ✪★⭑⭑"
     MESSAGE_COUNT = """
-╭──────⌈ 📥 Cloning ⌋──────╮<code>
-├ CMID - {}
-├ Transfers - {}
-├ Progress - {} %
-├ Time taken - {} {}
-├ Clone started - {}
-├ Last updated  - {}</code>
+╭──────⌈ 📥 克隆中 ⌋──────╮<code>
+├ 消息ID - {}
+├ 传输数 - {}
+├ 进度 - {} %
+├ 用时 - {} {}
+├ 开始时间 - {}
+├ 最后更新 - {}</code>
 ├  🔰 <a href='t.me/RMProjects'><b>@RMProjects</b></a> || 🏅 <a href='https://github.com/m4mallu/clonebot-ui'><b>@Github</b></a>
-╰──────⌈ 💢 Clonebot ⌋─────╯"""
+╰──────⌈ 💢 克隆机器人 ⌋─────╯"""
     DUPLICATE_INDEX = """
-╭──────⌈ ⚠️ Skipping ⌋──────╮<code>
-├ CMID - {}
-├ Total - {}</code>
-╰──────⌈ 💢 Clonebot ⌋──────╯"""
+╭──────⌈ ⚠️ 跳过中 ⌋──────╮<code>
+├ 消息ID - {}
+├ 总数 - {}</code>
+╰──────⌈ 💢 克隆机器人 ⌋──────╯"""
     INDEXING_MSG = """
-╭─────⌈ ⚠️ Indexing ⌋─────╮<code>
-├ Indexing target chat
+╭─────⌈ ⚠️ 索引中 ⌋─────╮<code>
+├ 正在索引目标聊天
 ├
-├ CMID - {}
-├ LMID - {}
-├ Duplicates - {}</code>
-╰─────⌈ 💢 Clonebot ⌋─────╯
+├ 当前消息ID - {}
+├ 最后消息ID - {}
+├ 重复文件 - {}</code>
+╰─────⌈ 💢 克隆机器人 ⌋─────╯
 \xad             \xad"""
     INFO_CHAT_TYPES = """
-𝙔𝙤𝙪 𝙘𝙖𝙣 𝙚𝙣𝙩𝙚𝙧 𝙩𝙝𝙚 𝙛𝙤𝙡𝙡𝙤𝙬𝙞𝙣𝙜 𝙩𝙮𝙥𝙚𝙨:
+你可以输入以下类型:
 
-𝐈𝐝           : 𝟏𝟐𝟑𝟒𝟓𝟔𝟕𝟖𝟗 (-𝟏𝟎𝟎 𝐧𝐨𝐭 𝐫𝐞𝐪.)
-𝐈𝐧𝐯𝐢𝐭𝐞 𝐥𝐢𝐧𝐤𝐬  : 𝐡𝐭𝐭𝐩𝐬://𝐭.𝐦𝐞/𝐣𝐨𝐢𝐧𝐜𝐡𝐚𝐭/
-𝐏𝐮𝐛𝐥𝐢𝐜 𝐥𝐢𝐧𝐤𝐬 : 𝐡𝐭𝐭𝐩𝐬://𝐭.𝐦𝐞/𝐩𝐲𝐭𝐡𝐨𝐧
-𝐔𝐬𝐞𝐫𝐧𝐚𝐦𝐞𝐬  : @𝐩𝐲𝐭𝐡𝐨𝐧
+ID           : 123456789 (-100 不需要)
+邀请链接      : https://t.me/joinchat/
+公开链接      : https://t.me/python
+用户名        : @python
     """
     SELECTED_TYPE = """
-You have selected:
+你已选择:
 ----------------------------
-{} Document
-{} Audio
-{} Video
-{} Photo
-{} Voice
-{} Text
+{} 文档
+{} 音频
+{} 视频
+{} 图片
+{} 语音
+{} 文本
     """
     VIEW_CONF = """
-𝐒𝐨𝐮𝐫𝐜𝐞 𝐈𝐝 : {}
-𝐓𝐚𝐫𝐠𝐞𝐭 𝐈𝐝 : {}
-𝐅𝐫𝐨𝐦 𝐦𝐬𝐠 𝐈𝐝 : {} | 𝐓𝐨 𝐦𝐬𝐠 𝐈𝐝 : {}
-𝐃𝐞𝐥𝐚𝐲𝐞𝐝 : {} | 𝐂𝐚𝐩𝐭𝐢𝐨𝐧 : {}"""
+源聊天ID : {}
+目标聊天ID : {}
+起始消息ID : {} | 结束消息ID : {}
+延迟发送 : {} | 保留标题 : {}"""
     FILE_TYPES = ["document", "video", "audio", "voice", "photo", "text"]
-    COPIED_MESSAGES = "<b><a href='https://github.com/m4mallu/clonebot'>Medias Copied</a></b>"
-    IN_CORRECT_PERMISSIONS_MESSAGE_DEST_POSTING = "A̶c̶c̶e̶s̶s̶ ̶D̶e̶n̶i̶e̶d̶\n\n𝘜𝘴𝘦𝘳 𝘪𝘴 𝘯𝘰𝘵 𝘢𝘯 𝘢𝘥𝘮𝘪𝘯 𝘰𝘳 𝘥𝘰𝘦𝘴𝘯'𝘵 𝘩𝘢𝘷𝘦\n" \
-                                                  "𝘱𝘰𝘴𝘵𝘪𝘯𝘨 𝘱𝘳𝘪𝘷𝘪𝘭𝘢𝘨𝘦𝘴 𝘪𝘯 𝘵𝘩𝘦 𝘨𝘪𝘷𝘦𝘯 𝘤𝘩𝘢𝘵"
-    USER_ABSENT_MSG = "𝙎𝙚𝙨𝙨𝙞𝙤𝙣 𝙪𝙨𝙚𝙧 𝙞𝙨 𝙣𝙤𝙩 𝙞𝙣 𝙩𝙝𝙚 𝙩𝙖𝙧𝙜𝙚𝙩 𝙘𝙝𝙖𝙩 𝙜𝙞𝙫𝙚𝙣"
-    CANCEL_CLONE = "𝙎𝙩𝙤𝙥𝙥𝙞𝙣𝙜 𝙩𝙝𝙚 𝙥𝙧𝙤𝙘𝙚𝙨𝙨... 𝙋𝙡𝙯 𝙬𝙖𝙞𝙩 🕚"
-    CANCELLED_MSG = "⚠      𝙐𝙨𝙚𝙧 𝙘𝙖𝙣𝙘𝙚𝙡𝙡𝙚𝙙 𝙘𝙡𝙤𝙣𝙞𝙣𝙜      ⚠"
-    RESTART_MSG = "✅ Bot has been restarted successfully ✅"
-    RESTART_MSG_ERROR = "❌ You are not authorized ❌"
+    COPIED_MESSAGES = "<b><a href='https://github.com/m4mallu/clonebot'>媒体已复制</a></b>"
+    IN_CORRECT_PERMISSIONS_MESSAGE_DEST_POSTING = "访问被拒绝\n\n用户不是管理员或在指定聊天中没有" \
+                                                  "发布权限"
+    USER_ABSENT_MSG = "会话用户不在指定的目标聊天中"
+    CANCEL_CLONE = "正在停止进程... 请稍等 🕚"
+    CANCELLED_MSG = "⚠      用户已取消克隆      ⚠"
+    RESTART_MSG = "✅ 机器人已成功重启 ✅"
+    RESTART_MSG_ERROR = "❌ 您没有权限 ❌"
     CAPTION_ERROR = """
-🔊 Custom Caption:
+🔊 自定义标题:
 -------------------------------
-⚠️ A custom caption has been found in my database. Please clear it in CC, before using this feature."""
+⚠️ 在我的数据库中发现了自定义标题。请在使用此功能前在CC中清除它。"""
     CUSTOM_CAPTION_MSG_CLR = """
-🔊 Custom Caption:
+🔊 自定义标题:
 -------------------------------
-Custom Caption message has been cleared successfully ✅"""
-    TEXT_UPDATE_MSG = "<code>Do you want to set this text as a custom caption?</code>"
+自定义标题消息已成功清除 ✅"""
+    TEXT_UPDATE_MSG = "<code>您想将此文本设置为自定义标题吗？</code>"
     CUSTOM_CAPTION_MSG = """
-🔊 Custom Caption:
+🔊 自定义标题:
 -------------------------------
-Send any text to the bot chat and follow the instructions to set a custom caption."""
+向机器人聊天发送任何文本并按照说明设置自定义标题。"""
     CUSTOM_CAPTION_CNF = """
-🔊 Custom Caption:
+🔊 自定义标题:
 -------------------------------
-Custom caption message has been set successfully ✅"""
-    INITIAL_MESSAGE_TEXT = "🔎  𝙄𝙣𝙞𝙩𝙞𝙖𝙡𝙞𝙯𝙞𝙣𝙜 𝙘𝙡𝙤𝙣𝙚  🔎"
-    WAIT_MSG = "♻️ 𝙋𝙧𝙤𝙘𝙚𝙨𝙨𝙞𝙣𝙜... 𝙥𝙡𝙯 𝙬𝙖𝙞𝙩 "
+自定义标题消息已成功设置 ✅"""
+    INITIAL_MESSAGE_TEXT = "🔎  正在初始化克隆  🔎"
+    WAIT_MSG = "♻️ 处理中... 请稍等 "
     SOURCE_CNF = """
-𝐂𝐡𝐚𝐭 𝐍𝐚𝐦𝐞: {}
-𝐂𝐡𝐚𝐭 𝐈𝐝: <code> {}</code>
-𝐂𝐡𝐚𝐭 𝐓𝐲𝐩𝐞: {}
-𝐂𝐡𝐚𝐭 𝐔𝐬𝐞𝐫𝐧𝐚𝐦𝐞: {}
-𝐋𝐨𝐜𝐚𝐭𝐢𝐨𝐧: {}
-𝐌𝐞𝐦𝐛𝐞𝐫𝐬: {}
+聊天名称: {}
+聊天ID: <code> {}</code>
+聊天类型: {}
+聊天用户名: {}
+位置: {}
+成员数: {}
 \xad                                                              \xad
-S̶o̶u̶r̶c̶e̶ C̶h̶a̶t̶ 𝐒𝐚𝐯𝐞𝐝  ✅
+源聊天已保存  ✅
                      """
     DEST_CNF = """
-𝐂𝐡𝐚𝐭 𝐍𝐚𝐦𝐞: {}
-𝐂𝐡𝐚𝐭 𝐈𝐝: <code> {}</code>
-𝐂𝐡𝐚𝐭 𝐓𝐲𝐩𝐞: {}
-𝐂𝐡𝐚𝐭 𝐔𝐬𝐞𝐫𝐧𝐚𝐦𝐞: {}
-𝐋𝐨𝐜𝐚𝐭𝐢𝐨𝐧: {}
-𝐌𝐞𝐦𝐛𝐞𝐫𝐬: {}
+聊天名称: {}
+聊天ID: <code> {}</code>
+聊天类型: {}
+聊天用户名: {}
+位置: {}
+成员数: {}
 \xad                                                              \xad
-T̶a̶r̶g̶e̶t̶ C̶h̶a̶t̶ 𝐒𝐚𝐯𝐞𝐝  ✅
+目标聊天已保存  ✅
                """
     SESSION_START_INFO = """
-𝐔𝐬𝐞𝐫 𝐬𝐞𝐬𝐬𝐢𝐨𝐧 𝐬𝐭𝐚𝐫𝐭𝐞𝐝:
+用户会话已启动:
 
-𝐃𝐚𝐭𝐞     :  {}
-𝐓𝐢𝐦𝐞    :  {}
+日期     :  {}
+时间    :  {}
 
-𝘈 𝘶𝘴𝘦𝘳 𝘴𝘦𝘴𝘴𝘪𝘰𝘯 𝘪𝘴 𝘴𝘵𝘢𝘳𝘵𝘦𝘥 𝘪𝘯 𝘺𝘰𝘶𝘳
-𝘢𝘤𝘤𝘰𝘶𝘯𝘵, 𝘪𝘧 𝘺𝘰𝘶 𝘬𝘯𝘰𝘸 𝘵𝘩𝘪𝘴, 𝘬𝘦𝘦𝘱
-𝘵𝘩𝘪𝘴 𝘣𝘰𝘵 𝘶𝘯𝘣𝘭𝘰𝘤𝘬𝘦𝘥, 𝘺𝘰𝘶 𝘤𝘢𝘯 𝘪𝘨𝘯𝘰𝘳𝘦
-𝘵𝘩𝘪𝘴 𝘮𝘦𝘴𝘴𝘢𝘨𝘦, 𝘐𝘧 𝘺𝘰𝘶 𝘧𝘦𝘦𝘭𝘴 𝘭𝘪𝘬𝘦
-𝘧𝘶𝘤𝘬𝘦𝘥-𝘶𝘱, ᴛᴇʀᴍɪɴᴀᴛᴇ 𝘵𝘩𝘪𝘴 𝘴𝘦𝘴𝘴𝘪𝘰𝘯
-𝘢𝘯𝘥 𝘣𝘭𝘰𝘤𝘬 𝘵𝘩𝘪𝘴 𝘣𝘰𝘵 𝘵𝘰 𝘢𝘷𝘰𝘪𝘥 𝘶𝘴𝘢𝘨𝘦
-𝘰𝘧 𝘺𝘰𝘶𝘳 𝘴𝘦𝘴𝘴𝘪𝘰𝘯 𝘢𝘨𝘢𝘪𝘯. Y̶o̶u̶ c̶a̶n̶
-s̶e̶e̶ t̶h̶i̶s̶ m̶e̶s̶s̶a̶g̶e̶ a̶g̶a̶i̶n̶ w̶h̶e̶n̶
-H̶e̶r̶o̶k̶u̶ f̶r̶e̶e̶ d̶y̶n̶o̶s̶ r̶e̶s̶t̶a̶r̶t̶s̶ .
+用户会话已在您的账户中启动，如果您知道这一点，请保持
+此机器人不被屏蔽，您可以忽略此消息。如果您感觉
+有问题，请终止此会话并屏蔽此机器人以避免
+再次使用您的会话。当 Heroku 免费容器重启时
+您可能会再次看到此消息。
     """
-    NOT_CONFIGURED = "𝙎𝙤𝙪𝙧𝙘𝙚 & 𝙏𝙖𝙧𝙜𝙚𝙩 𝙘𝙝𝙖𝙩𝙨 𝙣𝙤𝙩 𝙘𝙤𝙣𝙛𝙞𝙜𝙪𝙧𝙚𝙙 ⚠"
-    NOT_AUTH_TEXT = "𝙔𝙤𝙪 𝙖𝙧𝙚 𝙣𝙤𝙩 𝙖𝙪𝙩𝙝𝙤𝙧𝙞𝙯𝙚𝙙  ⚠ "
-    BOT_BLOCKED_MSG = "Bot is blocked by the  session user !"
-    NOT_CONFIGURED_CLONE = "𝙉𝙤 𝙘𝙝𝙖𝙩 𝙘𝙤𝙣𝙛𝙞𝙜𝙪𝙧𝙖𝙩𝙞𝙤𝙣 𝙛𝙤𝙪𝙣𝙙 ⚠\n\n𝘾𝙤𝙣𝙛𝙞𝙜𝙪𝙧𝙚 𝙩𝙝𝙚 𝙎𝙤𝙪𝙧𝙘𝙚 & 𝘿𝙚𝙨𝙩𝙞𝙣𝙖𝙩𝙞𝙤𝙣 𝙘𝙝𝙖𝙩𝙨 𝙗𝙚𝙛𝙤𝙧𝙚 𝙮𝙤𝙪 𝙘𝙡𝙤𝙣𝙚 🤷"
-    FINISHED_TEXT = "𝘾𝙡𝙤𝙣𝙚  𝙘𝙤𝙢𝙥𝙡𝙚𝙩𝙚𝙙 𝙨𝙪𝙘𝙘𝙚𝙨𝙨𝙛𝙪𝙡𝙡𝙮  ✅"
-    TERMINATED_MSG = "🚫 𝘽𝙤𝙩 𝙏𝙚𝙧𝙢𝙞𝙣𝙖𝙩𝙚𝙙 🚫\n𝘍𝘦𝘦𝘭𝘴 𝘴𝘰𝘮𝘦𝘵𝘩𝘪𝘯𝘨 𝘧𝘪𝘴𝘩𝘺? 𝘉𝘭𝘰𝘤𝘬 𝘵𝘩𝘪𝘴 𝘣𝘰𝘵 𝘵𝘰 𝘢𝘷𝘰𝘪𝘥 𝘵𝘩𝘦 𝘶𝘴𝘢𝘨𝘦 𝘰𝘧 𝘺𝘰𝘶𝘳 𝘴𝘦𝘴𝘴𝘪𝘰𝘯 𝘢𝘨𝘢𝘪𝘯 !"
-    COPY_ERROR = "𝙎𝙤𝙢𝙚𝙩𝙝𝙞𝙣𝙜 𝙬𝙚𝙣𝙩 𝙬𝙧𝙤𝙣𝙜 !\n\n𝘊𝘰𝘱𝘺𝘪𝘯𝘨 𝘢𝘣𝘰𝘳𝘵𝘦𝘥 𝘣𝘺 𝘵𝘩𝘦 𝘴𝘺𝘴𝘵𝘦𝘮\n𝘊𝘩𝘦𝘤𝘬 𝘢𝘭𝘭 𝘵𝘩𝘦 𝘶𝘴𝘦𝘳 𝘱𝘦𝘳𝘮𝘪𝘴𝘴𝘪𝘰𝘯𝘴."
-    INVALID_CHAT_ID = "<u>𝙄𝙣𝙫𝙖𝙡𝙞𝙙 𝙘𝙝𝙖𝙩 𝙥𝙖𝙧𝙖𝙢𝙚𝙩𝙚𝙧 𝙛𝙤𝙪𝙣𝙙</u>\n\n𝐂𝐚𝐮𝐬𝐞𝐬:\n1. 𝘚𝘦𝘴𝘴𝘪𝘰𝘯 𝘶𝘴𝘦𝘳 𝘯𝘰𝘵 𝘪𝘯 𝘗𝘳𝘪𝘷𝘢𝘵𝘦 𝘤𝘩𝘢𝘵\n" \
-                      "2. 𝘍𝘰𝘳 𝘱𝘶𝘣𝘭𝘪𝘤 𝘤𝘩𝘢𝘵𝘴, 𝘶𝘴𝘦 '@𝘶𝘴𝘦𝘳𝘯𝘢𝘮𝘦'\n𝘰𝘳 𝘭𝘪𝘯𝘬 𝘪𝘯𝘴𝘵𝘦𝘢𝘥 𝘰𝘧 '𝘪𝘥'"
-    ASK_SOURCE = "𝙂𝙞𝙫𝙚 𝙩𝙝𝙚 𝙨𝙤𝙪𝙧𝙘𝙚 𝙘𝙝𝙖𝙩 𝙞𝙣𝙛𝙤:\n𝑌𝑜𝑢 ℎ𝑎𝑣𝑒 30𝑆𝑒𝑐 𝑡𝑜 𝑑𝑜 𝑡ℎ𝑖𝑠.."
-    ASK_DESTINATION = "𝙂𝙞𝙫𝙚 𝙩𝙝𝙚 𝘿𝙚𝙨𝙩𝙞𝙣𝙖𝙩𝙞𝙤𝙣 𝙘𝙝𝙖𝙩 𝙞𝙣𝙛𝙤:\n𝑌𝑜𝑢 ℎ𝑎𝑣𝑒 30𝑆𝑒𝑐 𝑡𝑜 𝑑𝑜 𝑡ℎ𝑖𝑠.."
-    ASK_START_MSG_ID = "𝙂𝙞𝙫𝙚 𝙩𝙝𝙚 𝙨𝙩𝙖𝙧𝙩𝙞𝙣𝙜 𝙢𝙚𝙨𝙨𝙖𝙜𝙚 𝙄𝙙:\n𝑌𝑜𝑢 ℎ𝑎𝑣𝑒 30𝑆𝑒𝑐 𝑡𝑜 𝑑𝑜 𝑡ℎ𝑖𝑠.."
-    ASK_END_MSG_ID = "𝙂𝙞𝙫𝙚 𝙩𝙝𝙚 𝙚𝙣𝙙 𝙢𝙚𝙨𝙨𝙖𝙜𝙚 𝙄𝙙\n𝑌𝑜𝑢 ℎ𝑎𝑣𝑒 30𝑆𝑒𝑐 𝑡𝑜 𝑑𝑜 𝑡ℎ𝑖𝑠.."
-    CHAT_DUPLICATED_MSG = "𝙎𝙤𝙪𝙧𝙘𝙚 & 𝘿𝙚𝙨𝙩𝙞𝙣𝙖𝙩𝙞𝙤𝙣 𝙘𝙝𝙖𝙩 𝙄𝙙𝙨 𝙘𝙖𝙣'𝙩 𝙗𝙚 𝙨𝙖𝙢𝙚 "
-    FROM_MSG_ID_CNF = "𝐒𝐭𝐚𝐫𝐭 𝐦𝐞𝐬𝐬𝐚𝐠𝐞 𝐈𝐝:👉 <code>{}</code> 👈 𝐒𝐚𝐯𝐞𝐝  ✅"
-    END_MSG_ID_CNF = "𝐄𝐧𝐝 𝐦𝐞𝐬𝐬𝐚𝐠𝐞 𝐈𝐝:👉 <code>{}</code> 👈 𝐒𝐚𝐯𝐞𝐝  ✅"
-    INVALID_MSG_ID = "𝙈𝙚𝙨𝙨𝙖𝙜𝙚 𝙞𝙙 𝙨𝙝𝙤𝙪𝙡𝙙 𝙗𝙚 𝙖𝙣 𝙄𝙣𝙩𝙚𝙜𝙚𝙧 ❗️"
-    INVALID_REPLY_MSG = "𝙄𝙣𝙫𝙖𝙡𝙞𝙙 𝙧𝙚𝙥𝙡𝙖𝙮 𝙢𝙚𝙨𝙨𝙖𝙜𝙚 ❗️"
-    CNF_SOURCE_FIRST = "𝘾𝙤𝙣𝙛𝙞𝙜𝙪𝙧𝙚 𝙩𝙝𝙚 𝙨𝙤𝙪𝙧𝙘𝙚 𝙘𝙝𝙖𝙩 𝙛𝙞𝙧𝙨𝙩  ❗️"
-    DELAY_OFF = "𝘿𝙚𝙡𝙖𝙮𝙚𝙙 𝙘𝙡𝙤𝙣𝙚 : 𝘿𝙚𝙖𝙘𝙩𝙞𝙫𝙖𝙩𝙚𝙙 🚫"
-    DELAY_ON = "𝘿𝙚𝙡𝙖𝙮𝙚𝙙 𝙘𝙡𝙤𝙣𝙚 : 𝘼𝙘𝙩𝙞𝙫𝙖𝙩𝙚𝙙 [𝟏𝟎 𝐬𝐞𝐜] ✅"
+    NOT_CONFIGURED = "源聊天和目标聊天未配置 ⚠"
+    NOT_AUTH_TEXT = "您没有权限  ⚠ "
+    BOT_BLOCKED_MSG = "机器人被会话用户屏蔽！"
+    NOT_CONFIGURED_CLONE = "未找到聊天配置 ⚠\n\n在克隆之前请配置源聊天和目标聊天 🤷"
+    FINISHED_TEXT = "克隆已成功完成  ✅"
+    TERMINATED_MSG = "🚫 机器人已终止 🚫\n感觉有问题？屏蔽此机器人以避免再次使用您的会话！"
+    COPY_ERROR = "出现错误！\n\n系统中止了复制\n请检查所有用户权限。"
+    INVALID_CHAT_ID = "<u>发现无效的聊天参数</u>\n\n原因:\n1. 会话用户不在私人聊天中\n" \
+                      "2. 对于公开聊天，请使用'@用户名'\n或链接而不是'id'"
+    ASK_SOURCE = "请提供源聊天信息:\n您有30秒时间完成此操作.."
+    ASK_DESTINATION = "请提供目标聊天信息:\n您有30秒时间完成此操作.."
+    ASK_START_MSG_ID = "请提供起始消息ID:\n您有30秒时间完成此操作.."
+    ASK_END_MSG_ID = "请提供结束消息ID\n您有30秒时间完成此操作.."
+    CHAT_DUPLICATED_MSG = "源聊天和目标聊天ID不能相同 "
+    FROM_MSG_ID_CNF = "起始消息ID:👉 <code>{}</code> 👈 已保存  ✅"
+    END_MSG_ID_CNF = "结束消息ID:👉 <code>{}</code> 👈 已保存  ✅"
+    INVALID_MSG_ID = "消息ID应该是整数 ❗️"
+    INVALID_REPLY_MSG = "无效的回复消息 ❗️"
+    CNF_SOURCE_FIRST = "请先配置源聊天  ❗️"
+    DELAY_OFF = "延迟克隆 : 已停用 🚫"
+    DELAY_ON = "延迟克隆 : 已激活 [10秒] ✅"
     BLANK = "➖➖➖➖➖➖➖➖➖➖➖➖➖"
-    BLOCK = "ᴘʀᴏɢʀᴇꜱꜱ ꜰᴀɪʟᴇᴅ ᴛᴏ ᴅɪꜱᴘʟᴀʏ :👉 ʜᴇʟᴘ"
-    CAPTION_ON = "𝘾𝙖𝙥𝙩𝙞𝙤𝙣 𝙤𝙣 𝙛𝙞𝙡𝙚𝙨 : 𝘼𝙘𝙩𝙞𝙫𝙖𝙩𝙚𝙙 ✅"
-    CAPTION_OFF = "𝘾𝙖𝙥𝙩𝙞𝙤𝙣 𝙤𝙣 𝙛𝙞𝙡𝙚𝙨 : 𝘿𝙚𝙖𝙘𝙩𝙞𝙫𝙖𝙩𝙚𝙙 🚫"
-    FN_AS_CAPT_ON = "𝙁𝙞𝙡𝙚 𝙣𝙖𝙢𝙚 𝙖𝙨 𝙘𝙖𝙥𝙩𝙞𝙤𝙣 : 𝘼𝙘𝙩𝙞𝙫𝙖𝙩𝙚𝙙 ✅"
-    FN_AS_CAPT_OFF = "𝙁𝙞𝙡𝙚 𝙣𝙖𝙢𝙚 𝙖𝙨 𝙘𝙖𝙥𝙩𝙞𝙤𝙣 : 𝘿𝙚𝙖𝙘𝙩𝙞𝙫𝙖𝙩𝙚𝙙 🚫"
-    NOT_REQUIRED = "𝙏𝙝𝙞𝙨 𝙛𝙞𝙚𝙡𝙙 𝙞𝙨 𝙣𝙤𝙩 𝙈𝙖𝙙𝙖𝙩𝙤𝙧𝙮  ⚠"
-    RST_MSG = "𝙍𝙚𝙨𝙚𝙩 𝙩𝙤 𝘽𝙤𝙩 𝙙𝙚𝙛𝙖𝙪𝙡𝙩𝙨 .. 𝘾𝙤𝙣𝙛𝙞𝙧𝙢𝙚𝙙 ✅"
-    TEST_MSG = "Test Message"
-    OVER_FLOW = "𝙈𝙖𝙭𝙞𝙢𝙪𝙢 𝙡𝙞𝙢𝙞𝙩 𝙞𝙨 𝙚𝙭𝙘𝙚𝙚𝙙𝙚𝙙 !\n𝘾𝙝𝙚𝙘𝙠 𝙩𝙝𝙚 𝙖𝙡𝙡𝙤𝙬𝙚𝙙 𝙡𝙞𝙢𝙞𝙩, 𝙏𝙧𝙮 𝙖𝙜𝙖𝙞𝙣 !"
-    SELECT_TYPE = "👉 𝙎𝙚𝙡𝙚𝙘𝙩𝙞𝙤𝙣 𝙬𝙞𝙡𝙡 𝙗𝙚 𝙩𝙤𝙜𝙜𝙡𝙚𝙙 𝙤𝙣 𝙩𝙖𝙥\n𝘈𝘭𝘭 𝘢𝘳𝘦 𝘴𝘦𝘭𝘦𝘤𝘵𝘦𝘥 𝘣𝘺 𝘥𝘦𝘧𝘢𝘶𝘭𝘵 !"
-    CLONE_REPORT_CAPTION = "<b>Clone Report</b>"
-    PURGE_PROMPT = "👉 <b>{}</b>  👈 <i>Duplicate files found in your target chat. Do you wish to purge it now ?</i>"
-    PROCESSING_PURGE = "<b>🔷Now@: {}        🔷End@: {}</b>\n\n<i>𝐏𝐫𝐨𝐜𝐞𝐬𝐬𝐢𝐧𝐠.. Please Wait</i>"
-    TARGET_CFG_LOAD_MSG = "<b><u>Imported</u>  ✅</b>\n\n<code>An index of the given target chat found in my database. " \
-                          "It has been loaded to my memory.</code>\n\n<b><i>Proceeding to clone..</i></b>"
+    BLOCK = "进度显示失败 :👉 帮助"
+    CAPTION_ON = "文件标题 : 已激活 ✅"
+    CAPTION_OFF = "文件标题 : 已停用 🚫"
+    FN_AS_CAPT_ON = "文件名作为标题 : 已激活 ✅"
+    FN_AS_CAPT_OFF = "文件名作为标题 : 已停用 🚫"
+    NOT_REQUIRED = "此字段不是必填项  ⚠"
+    RST_MSG = "重置为机器人默认设置 .. 已确认 ✅"
+    TEST_MSG = "测试消息"
+    OVER_FLOW = "超出最大限制！\n请检查允许的限制，重试！"
+    SELECT_TYPE = "👉 点击将切换选择\n默认情况下全部选中！"
+    CLONE_REPORT_CAPTION = "<b>克隆报告</b>"
+    PURGE_PROMPT = "👉 <b>{}</b>  👈 <i>在您的目标聊天中发现重复文件。您现在想要清除它吗？</i>"
+    PROCESSING_PURGE = "<b>🔷当前@: {}        🔷结束@: {}</b>\n\n<i>处理中.. 请稍等</i>"
+    TARGET_CFG_LOAD_MSG = "<b><u>已导入</u>  ✅</b>\n\n<code>在我的数据库中找到了给定目标聊天的索引。" \
+                          "它已加载到我的内存中。</code>\n\n<b><i>继续克隆..</i></b>"
     CLONE_REPORT = """
-🔰 <b>Report on cloning</b> 🔰
+🔰 <b>克隆报告</b> 🔰
 
-Finished time : <b>{}</b>
+完成时间 : <b>{}</b>
 
-Source Chat : <code>{}</code>
-Target Chat  : <code>{}</code>
+源聊天 : <code>{}</code>
+目标聊天  : <code>{}</code>
 
-Started at Id - {}
-Ended at Id   - {}
+起始ID - {}
+结束ID   - {}
 
-🕐 Delayed        - {}
-✍️ Caption        - {}
-🏷 FNAC            - {}
+🕐 延迟        - {}
+✍️ 标题        - {}
+🏷 文件名标题   - {}
 
-<b>Files Cloned</b>  - {}
+<b>已克隆文件</b>  - {}
 
-📚 Documents     - {}
-🎞 Videos             - {}
-🔊 Audios             - {}
-📸 Photos             - {}
-🗣 Voice                - {}
-📝 Text                  - {}
-⚠️ Duplicates       - {}
+📚 文档     - {}
+🎞 视频     - {}
+🔊 音频     - {}
+📸 图片     - {}
+🗣 语音     - {}
+📝 文本     - {}
+⚠️ 重复     - {}
 
-<u><b>Credits:</u></b> https://github.com/m4mallu
+<u><b>致谢:</u></b> https://github.com/m4mallu
 """
-    GET_CHAT_ID_MSG = "<b>You have been forwarded a message\nfrom a chat having the id:</b>\n\n<code>{" \
-                      "}</code>\n<b>Message Id: </b><code>{}</code>\n\n<i>Tap the above text to copy !</i> "
-    CLONE_REPORT_INFO = "A report has been generated in your SAVED MESSAGES folder. Thanks for using this bot 🤝"
+    GET_CHAT_ID_MSG = "<b>您已收到来自聊天的转发消息\nID为:</b>\n\n<code>{" \
+                      "}</code>\n<b>消息ID: </b><code>{}</code>\n\n<i>点击上面的文本复制！</i> "
+    CLONE_REPORT_INFO = "报告已在您的收藏夹中生成。感谢使用此机器人 🤝"
