@@ -22,8 +22,8 @@ class Config(object):
     # Generate a user session string
     TG_USER_SESSION = "Your_user_session_string_compatible_with_Pyrogram_v2"
 
-    # Database URI
-    DB_URI = "Your_database_URI"
+    # Database URI - 使用 SQLite
+    DB_URI = "sqlite:///clonebot.db"
 
 
 def LOGGER(name: str) -> logging.Logger:
